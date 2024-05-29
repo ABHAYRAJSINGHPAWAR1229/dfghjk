@@ -1,0 +1,6 @@
+FROM openjdk:latest
+
+COPY src /java/
+WORKDIR /java/
+RUN javac hello.java
+CMD ["java", "hello"]
